@@ -1,4 +1,101 @@
-.body {
- color: blue;
- background-color: blueviolet;
+/* --- COLORS --- 
+Background(gray): #D8D8D8
+Green: #04BF68
+Orange: #E55800
+Yellow: #CEA609
+Black: #090A0D
+
+/*  ------- Globals ----- */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Lato", Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: #D8D8D8;
+  }
+h1,
+h2 {
+  font-family: "Abril Fatface", Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav {
+    margin-left: 25px;
+  }
+  
+  nav ul {
+    padding: 0px;
+  }
+  
+  nav li {
+    display: inline-block;
+  }
+  
+  header,
+  footer {
+    background-color: #090A0D;
+    color: #fff;
+  }
+  
+  /* Links */
+  a {
+    text-decoration: none;
+  }
+  
+  header a {
+    color: #fff;
+    padding: 10px;
+  }
+
+
+
+
+
+
+
+/* Resposive styles */
+
+/*  ------- Mobile ----- */
+@media (min-width: 320px) and (max-width:680px){
+/*
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+*/
+}
+
+/*  ------- Tablet ----- */
+@media  (min-width:681px) and (max-width:1200px) {
+
+}
+
+
+/*  ------- Desktop ----- */
+@media (min-width:1201px) {
+body {
+    background-color: #D8D8D8;
+}
+
+.logo {
+    align-items: flex-start;
+}
+/*
+#hamburger-menu {
+    display: none;
+}
+#hamburger-menu:checked ~ nav {
+    display: none;
+*/
 }
