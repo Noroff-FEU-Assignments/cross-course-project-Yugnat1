@@ -88,8 +88,8 @@ header a:hover {
 .profile-card {
   display:flex;
   flex-direction: column;
-  justify-content: space-between;
   max-width: 1100px;
+  height: 500px;
   padding: 15px; 
   margin: 35px auto;
   padding: 20px;
@@ -106,8 +106,8 @@ header a:hover {
   flex: 4;
 }
 
-.profile-card_bottom img {
-  width: 100%;
+.profile-card img {
+  width: 80%;
 }
 
 
@@ -126,17 +126,20 @@ header a:hover {
 }
 
 .recent-movies_container {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-gap: 20px;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
 }
 .recently-watched_card {
-  background-color: #FFF;
+  align-items: stretch;
+  text-align: center;
    width: 450px;
-   height: 550px;
-   padding: 10px;
+   height: auto;
+
+   padding: 15px;
    border-radius: 8px;
+   border: #333333 1px dashed;
   }
 
   .recently-watched_card img {
@@ -187,8 +190,11 @@ header a:hover {
   
 .profile-card {
   flex-direction: row;
+  flex-wrap: wrap;
 }
-
+.recent-movies_container{
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 
