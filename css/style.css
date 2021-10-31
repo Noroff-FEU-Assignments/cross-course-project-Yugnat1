@@ -12,6 +12,14 @@ html, body {
   background-color:#D8D8D8;
 }
 
+footer {
+  background-color: #0C0B0B;
+  padding-top: 40px;
+  text-align: center;
+  color: #fff;
+  height: 200px;
+}
+
  h1, h2 {
   font-family: 'Abril Fatface', Verdana, sans-serif, cursive;
   font-weight: 400;
@@ -95,6 +103,7 @@ header a:hover {
   padding: 20px;
   background-color: #FFF;
   border-radius: 10px;
+
 }
 .profile-card_top {
   flex: 2;
@@ -191,7 +200,7 @@ header a:hover {
   
 .profile-card {
   flex-direction: row;
-  flex-wrap: wrap;
+
 }
 .recent-movies_container{
   flex-direction: row;
@@ -208,8 +217,3 @@ header a:hover {
 }
 
 /* -- Desktop -- */
-/*
-.recent-movies_container {'
-  flex-direction: row;
-  flex-wrap: wrap;
-}
