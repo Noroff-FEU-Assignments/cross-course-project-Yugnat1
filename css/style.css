@@ -1,12 +1,123 @@
+/* ----- COLORS ------
+Background: #D8D8D8
+Header/Footer: #0C0B0B
+CTA/Active (Green): #04BF68
+
+*/
+
+
 html, body {
   margin: 0px;
   padding: 0px;
-  background-color: gray;
+  background-color:#D8D8D8;
 }
 
+ h1, h2 {
+  font-family: 'Abril Fatface', Verdana, sans-serif, cursive;
+  font-weight: 400;
+}
 
+p, a {
+  font-family: 'Lato', Verdana, sans-serif;
+}
 
+/* ----- GLOBAL STYLES ----- */
 
+a {
+  text-decoration: none;
+}
 .recently-watched_card {
-  background-color: green;
 }
+
+
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #0C0B0B;
+  height: 100px;
+}
+/* ----- NAVIGATION ----- */
+nav {
+  margin-left: 40px;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 20px 30px;
+}
+
+header a {
+  color: #FFF;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  text-decoration: underline #04BF68;
+
+}
+
+/* ----- MAIN PAGE / HOME ----- */
+.top-container_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/images/bg_img_top-container.png");
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position-x: center;
+  background-position-y: bottom;
+  min-height: 30vh;
+}
+
+.top-profile_content {
+  width: 50%;
+  color: #FFF;
+
+}
+
+/* ----- LINKS / BUTTONS ----*/
+.edit-cta_small {
+  font-size: 1em;
+  text-align: center;
+  background-color:#04BF68 ;
+  color: #FFF;
+  padding: 8px;
+  border-radius: 3%;
+}
+.edit-cta_small:hover {
+  text-decoration: underline;
+}
+
+/* ----- XXX ----- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----- MEDIA QUERY STYLES ----- */
