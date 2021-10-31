@@ -101,10 +101,13 @@ header a:hover {
   text-align: left;
 }
 
-.profile-card_bottom >  {
+.profile-card_bottom   {
   margin-left:30px;
   flex: 4;
+}
 
+.profile-card_bottom img {
+  width: 100%;
 }
 
 
@@ -124,20 +127,16 @@ header a:hover {
 
 .recent-movies_container {
   display: grid;
-  grid-template-rows: auto;
-  justify-content: space-evenly;
-  grid-template-columns: 1fr;
-  grid-gap: 10px;
-  margin: 50px auto;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+  align-items: center;
 }
 .recently-watched_card {
   background-color: #FFF;
-  align-self: center;
    width: 450px;
-   height: 500px;
+   height: 550px;
    padding: 10px;
    border-radius: 8px;
-   border: #333 1px dashed;
   }
 
   .recently-watched_card img {
