@@ -129,17 +129,18 @@ header a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  height: 130vh;
+
 
 }
 .recently-watched_card {
   align-items: stretch;
   text-align: center;
-   width: 450px;
-   height: auto;
-
-   padding: 15px;
+   width: 350px;
+   height: 500px;
    border-radius: 8px;
    border: #333333 1px dashed;
+   padding: 10px;
   }
 
   .recently-watched_card img {
