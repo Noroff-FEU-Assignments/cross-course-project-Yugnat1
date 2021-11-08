@@ -1,0 +1,13 @@
+h1, h2, h3 {
+    font-family: "Abril Fatface", 'Times New Roman', serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav li {
+    font-family: 'Roboto';
+    font-weight: bold;
+    padding: 0px 15px;
+}

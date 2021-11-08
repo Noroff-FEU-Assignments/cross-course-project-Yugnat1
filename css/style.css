@@ -5,11 +5,13 @@ Red:    #7A0607
 Green:  #04BF68
 Orange: #E55800
 ---------------------*/
+/* ----- IMPORTS ----*/
 
 /* ---- FONT FACE ---*/
-
-
-
+@import "imports/variables.css";
+@import "imports/testing.css";
+@import "imports/typography.css";
+@import "imports/layout.css";
 /* ---- GLOBALS -----*/
 h1, h2, h3 {
     font-family: "Abril Fatface", 'Times New Roman', serif;
@@ -25,23 +27,50 @@ html, body {
     background-color: lightslategray;
 }
 
+a {
+    text-decoration: none;
+}
 
-header {
-    display: flex;
-    flex-direction: column;
-    background-color: lightyellow;
+header, footer {
+    background-color: #0C0B0B;
+    color: #FFF;
+}
+
+/* ---- NAV ---- */
+nav {
+    display:none;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger-menu:checked ~  nav {
+    display: block;
 }
 
 
+nav ul {
+    padding: 0;
+}
 
+nav a {
+    font-size: bold;
+}
+nav .active {
+    background-color: beige;
+}
 
 /* ----- Signup Page -----*/
    
 /* ------ MEDIA Q's ------*/
 @media only screen and (min-width:320px) {
-    .welcome {
-        background-color: lime;
+    header {
+        display: grid;
+        grid-template-columns: repeat (2fr);
+        grid-gap: 10px;
     }
+    
 }
 
 
@@ -49,9 +78,16 @@ header {
 
 
 
-@media only screen and (min-width:800px) {
-    .welcome {
-        flex-direction: row;
-        background-color: lightsteelblue;
+@media only screen and (min-width:600px) {
+    nav {
+        display: inline-block;
     }
+    nav li {
+        display: inline-block;
+
+    }
+    label, input {
+        display: none;
+    }
+    
 }
