@@ -57,20 +57,15 @@ nav ul {
 nav a {
     font-size: bold;
 }
-nav .active {
-    background-color: beige;
-}
+
 
 /* ----- Signup Page -----*/
    
 /* ------ MEDIA Q's ------*/
 @media only screen and (min-width:320px) {
-    header {
-        display: grid;
-        grid-template-columns: repeat (2fr);
-        grid-gap: 10px;
-    }
-    
+   header {
+       min-height: 65px;
+   }
 }
 
 
@@ -79,8 +74,23 @@ nav .active {
 
 
 @media only screen and (min-width:600px) {
+    header {
+        display: flex;
+        flex-direction: row;
+
+    }
     nav {
         display: inline-block;
+        min-height: 85px;
+        margin-left: 30px;
+    }
+
+    .logo-container {
+        flex: 3;
+    }
+
+    .hamburger-menu {
+        flex: 3;
     }
     nav li {
         display: inline-block;
@@ -90,4 +100,22 @@ nav .active {
         display: none;
     }
     
+    nav a:hover {
+        color: #04BF68;
+        text-decoration: underline;
+        background-color: #FFF ;
+    }
+
+    nav a {
+        color: #FFF;
+
+    }
+}
+
+
+@media only screen and (min-width:800px) {
+    nav .active {
+        background-color: rgb(51, 51, 50);
+        padding: 1.2em 1.2em .8em 1.2em;
+    }
 }
