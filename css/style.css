@@ -1,227 +1,57 @@
-/* ----- COLORS ------
-Background: #D8D8D8
-Header/Footer: #0C0B0B
-CTA/Active (Green): #04BF68
+/* ---- COLORS ------
+Black:  #0C0B0B
+White:  #FFF
+Red:    #7A0607
+Green:  #04BF68
+Orange: #E55800
+---------------------*/
 
-*/
+/* ---- FONT FACE ---*/
 
+
+
+/* ---- GLOBALS -----*/
+h1, h2, h3 {
+    font-family: "Abril Fatface", 'Times New Roman', serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
 
 html, body {
-  margin: 0px;
-  padding: 0px;
-  background-color:#D8D8D8;
+    margin: 0;
+    padding: 0;
+    background-color: lightslategray;
 }
 
-footer {
-  background-color: #0C0B0B;
-  padding-top: 40px;
-  text-align: center;
-  color: #fff;
-  height: 200px;
-}
-
- h1, h2 {
-  font-family: 'Abril Fatface', Verdana, sans-serif, cursive;
-  font-weight: 400;
-}
-
-p, a {
-  font-family: 'Lato', Verdana, sans-serif;
-}
-
-/* ----- GLOBAL STYLES ----- */
-
-a {
-  text-decoration: none;
-}
 
 header {
-  display: flex;
-  align-items: center;
-  background-color: #0C0B0B;
-  height: 100px;
-}
-/* ----- NAVIGATION ----- */
-nav {
-  margin-left: 40px;
-}
-
-nav ul {
-  padding: 0px;
-}
-
-nav li {
-  display: inline-block;
-  padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: lightyellow;
 }
 
 
-header a {
-  color: #FFF;
-  font-size: 22px;
-  font-weight: bold;
-  text-decoration: none;
-}
 
-header a:hover {
-  text-decoration: underline;
-}
 
-.active {
-  text-decoration: underline #04BF68;
-
-}
-
-/* ----- MAIN PAGE / HOME ----- */
-.top-container_main {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding-bottom: 30px;
-  background-image: url("/images/bg_img_top-container.png");
-  background-size: cover;
-  background-repeat: no-repeat; 
-  background-position-x: center;
-  background-position-y: bottom;
-  min-height: 33vh;
-}
-
-.top-profile_content img{
-  flex: 2;
-  width: 25%;
-}
-.top-profile_content {
-  position: absolute;
-  margin-left: 3%;
-  flex: 4;
-  padding-left: 140px;
-  width: 50%;
-  color: #FFF;
-
-}
-
-.profile-card {
-  display:flex;
-  flex-direction: column;
-  max-width: 1100px;
-  height: auto;
-  padding: 15px; 
-  margin: 35px auto;
-  padding: 20px;
-  background-color: #FFF;
-  border-radius: 10px;
-
-}
-.profile-card_top {
-  flex: 2;
-  text-align: left;
-}
-
-.profile-card_bottom   {
-  margin-left:30px;
-  flex: 4;
-}
-
-.profile-card img {
-  width: 80%;
+/* ----- Signup Page -----*/
+   
+/* ------ MEDIA Q's ------*/
+@media only screen and (min-width:320px) {
+    .welcome {
+        background-color: lime;
+    }
 }
 
 
-.recent-movies {
-  display:flex;
-  flex-direction: column;
-  justify-content: flex-start;
-   max-width: 1100px;
-  height: auto;
-  margin: 35px auto;
-  padding: 20px;
-  background-color: #FFF;
-  border-radius: 10px;
-}
-
-.recent-movies_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height:100%;
-
-
-}
-.recently-watched_card {
-  align-items: stretch;
-  text-align: center;
-   width: 350px;
-   height: 500px;
-   border-radius: 8px;
-   border: #333333 1px dashed;
-   padding: 10px;
-  }
-
-  .recently-watched_card img {
-    width: 80%;
-    height: auto;
-  }
-  
-
-/* ----- LINKS / BUTTONS ----*/
-.edit-cta_small {
-  font-size: 1em;
-  text-align: center;
-  background-color:#04BF68 ;
-  color: #FFF;
-  padding: 8px;
-  border-radius: 3%;
-}
-.edit-cta_small:hover {
-  text-decoration: underline;
-}
-
-/* ----- XXX ----- */
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ----- MEDIA QUERY STYLES ----- */
-
-
-/* -- Mobile -- */
-
-@media only screen and (min-width: 380px) {
-  
-.profile-card {
-  flex-direction: row;
-
-}
-.recent-movies_container{
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-
-/* -- Tablet -- */
-@media only screen and (min-width: 640){
-
-
-
-
-}
-
-/* -- Desktop -- */
-@media only screen and (min-width: 1024) {
-
+@media only screen and (min-width:800px) {
+    .welcome {
+        flex-direction: row;
+        background-color: lightsteelblue;
+    }
 }
