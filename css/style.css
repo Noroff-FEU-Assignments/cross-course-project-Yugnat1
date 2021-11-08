@@ -55,6 +55,7 @@ nav li {
   padding: 20px 30px;
 }
 
+
 header a {
   color: #FFF;
   font-size: 22px;
@@ -75,8 +76,7 @@ header a:hover {
 .top-container_main {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
   padding-bottom: 30px;
   background-image: url("/images/bg_img_top-container.png");
   background-size: cover;
@@ -86,7 +86,14 @@ header a:hover {
   min-height: 33vh;
 }
 
+.top-profile_content img{
+  flex: 2;
+  width: 25%;
+}
 .top-profile_content {
+  position: absolute;
+  margin-left: 3%;
+  flex: 4;
   padding-left: 140px;
   width: 50%;
   color: #FFF;
@@ -97,7 +104,7 @@ header a:hover {
   display:flex;
   flex-direction: column;
   max-width: 1100px;
-  height: 500px;
+  height: auto;
   padding: 15px; 
   margin: 35px auto;
   padding: 20px;
@@ -124,10 +131,8 @@ header a:hover {
   display:flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-content: space-around;
-  max-width: 1100px;
+   max-width: 1100px;
   height: auto;
-  padding: 15px; 
   margin: 35px auto;
   padding: 20px;
   background-color: #FFF;
@@ -196,7 +201,7 @@ header a:hover {
 
 /* -- Mobile -- */
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 380px) {
   
 .profile-card {
   flex-direction: row;
@@ -209,7 +214,7 @@ header a:hover {
 
 
 /* -- Tablet -- */
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 640){
 
 
 
@@ -217,3 +222,6 @@ header a:hover {
 }
 
 /* -- Desktop -- */
+@media only screen and (min-width: 1024) {
+
+}
