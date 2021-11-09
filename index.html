@@ -13,7 +13,10 @@
   </head>
     <body>
       <header>
+        <div class="logo-wrapper">
         <a href="index.html"><img src="images/SE_logo_white.png" alt="Square Eyes logo" /></a>
+      </div>
+      <div class="nav-wrapper">
         <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
         <input type="checkbox" id="hamburger-menu" />
         <nav>
@@ -24,20 +27,29 @@
             <li><a href="pages/account.html">Account</a></li>
           </ul>
         </nav>
+      </div>
       </header>
       <main>
-        <h1>Michael Tanguy - Member</h1>
-        <a href="#">Edit profile</a>
-        <section>
-          <img src="/images/profile_image_mt_small.png" alt="Profile image of M T" />
-          <h2>Details:</h2>
-          <p>Age: 39</p>
-          <p>Location: Skjåk</p>
-          <p>Bio: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ipsa laboriosam, est dignissimos, molestias, officia recusandae sequi vero reiciendis possimus natus. Accusantium laborum alias voluptas vel odit doloremque temporibus incidunt!</p>
+        <section class="profile">
+        <div class="profile-wrapper">
+          <div class="profile-card">
+            <figure>
+              <img src="/images/profile_image_mt_small.png" alt="Profile image of M T" class="profile_image"/>
+            </figure>
+              <h1>Michael Tanguy - Member</h1>
+              <a href="#">Edit profile</a>
+          </div>
+          <div class="profile-card">
+            <h2>Details:</h2>
+            <p>Age: 39</p>
+            <p>Location: Skjåk</p>
+            <p>Bio: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ipsa laboriosam, est dignissimos, molestias, officia recusandae sequi vero reiciendis possimus natus. Accusantium laborum alias voluptas vel odit doloremque temporibus incidunt!</p>
+          </div>
+        </div>
         </section>
         <section>
           <h2>Recently watched:</h2>
-        <div>
+        <div class="recent-movies_creator">
           <img src="/images/child-562297.png" alt="Cover image for the movie Into the Dust" />
           <h3>Into the Dust</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam error esse nesciunt maxime praesentium deserunt voluptates? Earum architecto vitae mollitia natus eius voluptas! Adipisci distinctio eius enim eos, voluptatem nobis!</p>

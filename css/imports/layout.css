@@ -1,0 +1,44 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #FFF;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo-wrapper {
+    text-align: left;
+}
+
+.nav-wrapper {
+
+}
+main {
+    padding: 5px;
+}
+.profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.profile-card {
+    width: 300px;
+    background: #FFF;
+    border-radius: 8px;
+    box-shadow: #333;
+}
+
+figure {
+    align-content: center;
+}
+
+.profile_image {
+    width: 30%;
+    
+}

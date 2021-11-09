@@ -20,13 +20,13 @@ h1, h2, h3 {
 p {
     font-family: 'Roboto', sans-serif;
 }
-
+/*
 html, body {
     margin: 0;
     padding: 0;
     background-color: lightslategray;
 }
-
+*/
 a {
     text-decoration: none;
 }
@@ -75,11 +75,7 @@ nav a {
 
 
 @media only screen and (min-width:600px) {
-    header {
-        display: flex;
-        flex-direction: row;
 
-    }
     nav {
         display: inline-block;
         min-height: 85px;
