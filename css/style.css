@@ -67,9 +67,6 @@ nav a {
        min-height: 65px;
    }
 
-   a:visited {
-       text-decoration: none;
-   }
 }
 
 
@@ -98,8 +95,8 @@ nav a {
     }
     nav li {
         display: inline-block;
-
     }
+        
     label, input {
         display: none;
     }
