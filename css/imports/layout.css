@@ -24,20 +24,24 @@ figure {
 .profile-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     gap: 10px;
     padding: 10px;
+    margin: 30px; auto;
 }
 
 .profile-card {
-    width: 300px;
-    background: #FFF;
+    min-width: 350px;
     border-radius: 8px;
     box-shadow: #333;
 }
 
 
-.profile_image {
+
+.profile-image_bio {
+    width: 100px;
+}
+
+.profile_image  {
     text-align: left;
     width: 100%;
 
@@ -53,7 +57,7 @@ figure {
 }
 
 .recent-movies_creator {
-    background-color: rgb(221, 221, 219);
+    background-color: rgb(235, 235, 227);
     border-radius: 8px;
     min-height: 400px;
     padding: 10px 10px;
