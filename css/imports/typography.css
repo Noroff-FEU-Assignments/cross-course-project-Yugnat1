@@ -2,7 +2,7 @@ h1, h2, h3 {
     font-family: "Abril Fatface", 'Times New Roman', serif;
 }
 
-p {
+p,a {
     font-family: 'Roboto', sans-serif;
 }
 
