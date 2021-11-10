@@ -15,7 +15,6 @@ main {
 }
 
 figure {
-    align-content: left;
     padding-top: 10px;
     margin: 0px auto;
 
@@ -24,36 +23,37 @@ figure {
 .profile-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-    margin: 30px; auto;
+
 }
 
 .profile-card {
     min-width: 350px;
     border-radius: 8px;
-    box-shadow: #333;
 }
 
 
 
-.profile-image_bio {
-    width: 100px;
-}
-
-.profile_image  {
-    text-align: left;
+.profile_img_bio {
     width: 100%;
+}
 
-    
+.recent-movie_img {
+    text-align: left;
+    width: 100%;  
+}
+
+.recently-watched_section {
+    max-width: 1150px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .recently-watched_container{
     display: flex;
-    gap: 30px;
+    gap: 20px;
     flex-direction: column;
     justify-content: space-between;
-    padding: 5px;
+
 }
 
 .recent-movies_creator {
@@ -88,3 +88,8 @@ figure {
 .cta-rate_btn:hover {
     background-color: #04BF68;    
 }
+
+
+
+
+/* ------ FOOOTER ------ */
