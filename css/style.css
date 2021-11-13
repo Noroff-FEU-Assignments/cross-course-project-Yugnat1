@@ -89,6 +89,7 @@ footer {
 }
 
 .search-cta_small {
+    margin-left: 10px;
     width: 60px;
     height: 25px;
     border-radius: 4px;
@@ -186,22 +187,34 @@ footer {
 /* ----- FILMS & Pay Pr View ----- */
 
 .film-header {
-    background: darkgreen;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.film-page-header {
-    background-color: chocolate;
+    background-image: url("/images/mobile/lightbulb-5352822.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
     height: 200px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.film-header > h2 {
+    text-align: center;
+    color: #FFF;
+}
+
+.film-page-header {
+    display: flex;
+    justify-content: center;
     align-content: stretch;
 }
 
+.film-page-header > #film-search {
+    height: 2em;
+}
 .search-container {
     width: 100px;
     display:flex;
+    flex-direction: row;
     justify-content: space-around;
   }
 
@@ -240,111 +253,5 @@ footer {
     flex-direction: column;
    }
    
-/* ------ MEDIA Q's ------*/
-@media only screen and (min-width:360px) {
-   header {
-       min-height: 65px;
-   }
 
-   }
-
-@media only screen and (min-width:600px) {
-
-    header {
-        min-height: 100px;
-    }
-
-    .hamburger-navigation {
-        display: none;
-    }
-    
-    .header-main-containter {
-    display: flex;
-    justify-content: space-around;
-    }
-
-    .profile-wrapper {
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-    }
-      
-    .header-main-content {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    nav a:hover {
-        color: #04BF68;
-        text-decoration: underline;
-    }
-
-    nav a {
-        color: #FFF;
-
-    }
-    /* ---- Account Page ----*/
-    .account-profile-card {
-       flex-direction: row;
-       justify-items: center;
-    }
-
-    .account-profile-header {
-        flex: 3;
-        padding: 20px;
-    }
-
-    .account-profile-bio {
-        text-align:start;
-        flex: 2;
-    }
-    .profile_img_bio {
-        margin-top: 10px;
-        padding: 30px;
-    }
-
-    .recently-viewed-wrapper {
-
-
-}
-
-
-@media (min-width:800px) {
-
-    .mobile-navigation {
-        display: none;
-    }
-    nav .active {
-        background-color: rgb(51, 51, 50);
-        padding: 1.2em 1.2em .8em 1.2em;
-    }
-   
-    .profile-wrapper {
-        background-color: blanchedalmond;
-        justify-content: space-around;
-        flex-direction: row;
-    }
-    footer {
-        display: block;
-        min-height: 200px;
-        background-color: cadetblue;
-    }
-    .footer-wrapper {
-        display: flex;
-        justify-content: space-between;
-    }
-  
-    .affiliates-container {
-        flex: 1;
-
-    }
-
-    .comapany-info-container {
-        flex: 1;
-
-    }
-
-    .legal-container {
-        flex: 1;
-    }
-}
+  /*
