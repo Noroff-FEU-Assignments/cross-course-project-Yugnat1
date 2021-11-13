@@ -6,40 +6,33 @@ Green:  #04BF68
 Orange: #E55800
 ---------------------*/
 /* ----- IMPORTS ----*/
-
-/* ---- FONT FACE ---*/
 @import "imports/variables.css";
 @import "imports/testing.css";
 @import "imports/typography.css";
 @import "imports/layout.css";
+
+/* ---- FONT FACE ---*/
+
+
 /* ---- GLOBALS -----*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 h1, h2, h3 {
     font-family: "Abril Fatface", 'Times New Roman', serif;
 }
 
-p {
+p, li {
     font-family: 'Roboto', sans-serif;
 }
-/*
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: lightslategray;
-}
-*/
+
 a {
     text-decoration: none;
 }
 
-header, footer {
-    background-color: #0C0B0B;
-    color: #FFF;
-}
-
 /* ---- NAV ---- */
-nav {
-    display:none;
-}
 
 #hamburger-menu {
     display: none;
@@ -49,13 +42,192 @@ nav {
     display: block;
 }
 
+header {
+    background-color: black;
+}
 
 nav ul {
     padding: 0;
+    margin: 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+}
+
+main {
+    margin-top: Opx;
+}
+/* ----- BUTTONS ----- */
+
+.cta-review_btn, 
+.cta-rate_btn {
+    margin-right: 20px;
+    transition-property: background;
+    transition-duration: .5s;
+    color: #FFF;
+    background-color: #E55800;
+    padding: 12px;
+    border-radius: 3px;
+}
+
+.cta-review_btn:hover {
+    background-color: #04BF68;    
+}
+
+.cta-rate_btn:hover {
+    background-color: #04BF68;    
+}
+
+.cta-search_btn {
+    display: block;
+}
+
+.search-cta_small {
+    width: 60px;
+    height: 25px;
+    border-radius: 4px;
+    color: black;
+    background-color:#04BF68;
+    border: 1px solid black;
+}
+
+.filter-cta_small {
+    width: auto;
+    padding: 5px;
+    height: 25px;
+    border-radius: 4px;
+    color: black;
+    background-color:#FFF;
+    border: 1px solid black;
+}
+
+.cta-edit-profile {
+    background: #04BF68;
+    padding: 10px;
+    color: #FFF;
+    border-radius: 4px;
+}
+
+/* ---- Imges -----*/
+.image-movie-cover_small {
+    width: 250px;
+}
+
+.profile_img_bio {
+    width: 220px;
+    padding: 45px ;
+}
+
+/* ----- Signup Page -----*/
+
+/* ---- Accounts page ----*/
+.main-content-wrapper {
+    height: 100vh;
+    background: darkolivegreen;
+    margin: 0 auto;
+}
+
+.account-profile-wrapper {
+    margin: 0 auto;
+    background: deeppink;
+    max-width: 1100px;
+    border-radius: 8px;
+}
+
+.account-profile-card {
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.link-box {
+    margin: 10px auto;
+    padding: 10px 0px 20px 0px;
+}
+
+.recently-viewed-wrapper {
+    display: flex;
+    background: #FFF;
+    max-width: 1100px;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.recently-viewed-card {
+    padding-left: 30px;
+    background: lightpink;
+    border-radius: 8px;
+
 }
 
 
-/* ----- Signup Page -----*/
+/* ----- FILMS & Pay Pr View ----- */
+
+.film-header {
+    background: darkgreen;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.film-page-header {
+    background-color: chocolate;
+    height: 200px;
+    display: flex;
+    align-content: stretch;
+}
+
+.search-container {
+    width: 100px;
+    display:flex;
+    justify-content: space-around;
+  }
+
+.search-filter-container {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/*
+.search-filter-tags {
+      
+  }
+/*
+.film-search-container {
+    display: flex;
+    flex-direction: column;
+    background: darkgray;
+}
+*/
+.filmview-card {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly ;
+    gap: 10px;
+}
+
+.films-card {
+    padding: 5px 10px;
+    
+    border-radius: 4px;
+    background: rgb(233, 231, 224);
+}
+
+/* ---- Footer ----*/
+footer {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+   }
    
 /* ------ MEDIA Q's ------*/
 @media only screen and (min-width:320px) {
@@ -63,27 +235,21 @@ nav ul {
        min-height: 65px;
    }
 
-}
-
-
-
-
-
+   }
 
 @media only screen and (min-width:600px) {
 
-    nav {
-        display: inline-block;
-        min-height: 85px;
-        margin-left: 30px;
+    header {
+        min-height: 100px;
     }
 
-    .logo-container {
-        flex: 3;
+    .hamburger-navigation {
+        display: none;
     }
-
-    .hamburger-menu {
-        flex: 3;
+    
+    .header-main-containter {
+    display: flex;
+    justify-content: space-around;
     }
 
     .profile-wrapper {
@@ -91,18 +257,12 @@ nav ul {
         display: flex;
         flex-direction: row;
     }
-    .recently-watched_container{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
+      
+    .header-main-content {
+        display: flex;
+        justify-content: space-between;
     }
-    nav li {
-        display: inline-block;
-    }
-        
-    label, input {
-        display: none;
-    }
-    
+
     nav a:hover {
         color: #04BF68;
         text-decoration: underline;
@@ -112,23 +272,65 @@ nav ul {
         color: #FFF;
 
     }
+    /* ---- Account Page ----*/
+    .account-profile-card {
+       flex-direction: row;
+       justify-items: center;
+    }
+
+    .account-profile-header {
+        flex: 3;
+        padding: 20px;
+    }
+
+    .account-profile-bio {
+        flex: 2;
+    }
+    .profile_img_bio {
+        padding: 30px;
+    }
+
+    .recently-viewed-wrapper {
+
 
 }
 
 
-@media only screen and (min-width:800px) {
+@media (min-width:800px) {
+
+    .mobile-navigation {
+        display: none;
+    }
     nav .active {
         background-color: rgb(51, 51, 50);
         padding: 1.2em 1.2em .8em 1.2em;
     }
-    .recently-watched_container {
-        margin: 0 auto;
-        max-width: 1100px;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-    }
-
+   
     .profile-wrapper {
         background-color: blanchedalmond;
+        justify-content: space-around;
         flex-direction: row;
     }
+    footer {
+        min-height: 200px;
+        background-color: cadetblue;
+    }
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+  
+    .affiliates-container {
+        flex: 1;
+
+    }
+
+    .comapany-info-container {
+        flex: 1;
+
+    }
+
+    .legal-container {
+        flex: 1;
+    }
+}
