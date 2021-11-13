@@ -1,113 +1,3 @@
-/* ------ MEDIA Q's ------*/
-@media only screen and (min-width:360px) {
-    header {
-        min-height: 65px;
-    }
- 
-    }
- 
- @media only screen and (min-width:600px) {
- 
-     header {
-         min-height: 100px;
-     }
- 
-     .hamburger-navigation {
-         display: none;
-     }
-     
-     .header-main-containter {
-     display: flex;
-     justify-content: space-around;
-     }
- 
-     .profile-wrapper {
-         margin: 0 auto;
-         display: flex;
-         flex-direction: row;
-     }
-       
-     .header-main-content {
-         display: flex;
-         justify-content: space-between;
-     }
- 
-     nav a:hover {
-         color: #04BF68;
-         text-decoration: underline;
-     }
- 
-     nav a {
-         color: #FFF;
- 
-     }
-     /* ---- Account Page ----*/
-     .account-profile-card {
-        flex-direction: row;
-        justify-items: center;
-     }
- 
-     .account-profile-header {
-         flex: 3;
-         padding: 20px;
-     }
- 
-     .account-profile-bio {
-         text-align:start;
-         flex: 2;
-     }
-     .profile_img_bio {
-         margin-top: 10px;
-         padding: 30px;
-     }
- 
-     .recently-viewed-wrapper {
-     
-         /* Images */
- 
- }
- 
- 
- @media (min-width:800px) {
- 
-     .mobile-navigation {
-         display: none;
-     }
-     nav .active {
-         background-color: rgb(51, 51, 50);
-         padding: 1.2em 1.2em .8em 1.2em;
-     }
-    
-     .profile-wrapper {
-         background-color: blanchedalmond;
-         justify-content: space-around;
-         flex-direction: row;
-     }
-     footer {
-         display: block;
-         min-height: 200px;
-         background-color: cadetblue;
-     }
-     .footer-wrapper {
-         display: flex;
-         justify-content: space-between;
-     }
-   
-     .affiliates-container {
-         flex: 1;
- 
-     }
- 
-     .comapany-info-container {
-         flex: 1;
- 
-     }
- 
-     .legal-container {
-         flex: 1;
-     }
- }
-/*
 html, 
 body {
     margin: 0px;
@@ -224,51 +114,39 @@ figure {
 }
 
 /* ---- Imges -----*/
-.image-movie-cover_small {
-    width: 270px;
-}
-
+.movie.image-movie-cover_small
 /* ----- FILMS & Pay Pr View ----- */
-.film-header {
-    background: darkgreen;
-    display: flex;
-    flex-direction: column;
+
 }
 
-/*
+
 .film-page-header {
     background-color: chocolate;
     height: 200px;
     display: flex;
     align-content: stretch;
 }
-*/
+
 .search-container {
     width: 100px;
     display:flex;
     justify-content: space-around;
   }
 
-.search-filter-container {
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 
-.filmview-card {
+.search-filter-tags {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+      
+  }
+
+.film-search-container {
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly ;
-    gap: 10px;
+    background: darkgray;
 }
 
-.films-card {
-    padding: 5px 10px;
-    max-width: 290px;
-    border-radius: 4px;
-    background: rgb(233, 231, 224);
-}
 
 /* ------ FOOOTER ------ */
+
