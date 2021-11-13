@@ -4,11 +4,12 @@
         min-height: 65px;
     }
  
-    }
+}
  
  @media only screen and (min-width:600px) {
     /* -- Globals ---*/
      header {
+         margin-top: 0;
          min-height: 100px;
      }
  
@@ -17,8 +18,8 @@
      }
      
      .header-main-containter {
-     display: flex;
-     justify-content: space-around;
+        display: flex;
+        flex-direction: row;
      }
  
      .profile-wrapper {
@@ -71,14 +72,13 @@
          padding: 30px;
      }
  
-     .recently-viewed-wrapper {
-     
+}     
          /* Images */
  
- }
+
  
  
- @media (min-width:800px) {
+    @media only screen and (min-width:768px) {
  
      .mobile-navigation {
          display: none;
@@ -88,32 +88,14 @@
          padding: 1.2em 1.2em .8em 1.2em;
      }
     
-     .profile-wrapper {
-         background-color: blanchedalmond;
-         justify-content: space-around;
-         flex-direction: row;
-     }
-     footer {
-         display: block;
-         min-height: 200px;
-         background-color: cadetblue;
-     }
-     .footer-wrapper {
-         display: flex;
-         justify-content: space-between;
-     }
-   
-     .affiliates-container {
-         flex: 1;
- 
-     }
- 
-     .comapany-info-container {
-         flex: 1;
- 
-     }
- 
-     .legal-container {
-         flex: 1;
-     }
- }
+     /* --- Account Page --- */
+    .account-profile-card {
+        background: chartreuse;
+        display: flex;
+        gap: 200;
+        flex-direction: row;
+    }
+    .recently-viewed-wrapper {
+       flex-direction: row-reverse;
+    }
+}
