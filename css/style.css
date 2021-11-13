@@ -58,6 +58,11 @@ nav > ul > li {
 main {
     margin-top: Opx;
 }
+
+footer {
+    display: none;
+    flex-direction: column;
+}
 /* ----- BUTTONS ----- */
 
 .cta-review_btn, 
@@ -111,12 +116,18 @@ main {
 
 /* ---- Imges -----*/
 .image-movie-cover_small {
-    width: 250px;
+    padding-right: 10px;
+    width: 300px;
 }
 
+.movie-preview_img {
+    padding-left: 5px;
+}
 .profile_img_bio {
-    width: 220px;
-    padding: 45px ;
+    width: 100%;
+    padding-top: 20px;
+
+
 }
 
 /* ----- Signup Page -----*/
@@ -124,23 +135,29 @@ main {
 /* ---- Accounts page ----*/
 .main-content-wrapper {
     height: 100vh;
-    background: darkolivegreen;
     margin: 0 auto;
 }
 
 .account-profile-wrapper {
     margin: 0 auto;
-    background: deeppink;
+    background: rgb(255, 255, 255);
     max-width: 1100px;
     border-radius: 8px;
 }
 
 .account-profile-card {
+    text-align: center;
     display:flex;
     flex-direction: column;
     padding: 20px;
+
 }
 
+.account-profile-bio {
+    text-align: left;
+    padding: 20px;
+
+}
 .link-box {
     margin: 10px auto;
     padding: 10px 0px 20px 0px;
@@ -150,17 +167,21 @@ main {
     display: flex;
     background: #FFF;
     max-width: 1100px;
-    gap: 10px;
+    gap: 30px;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .recently-viewed-card {
-    padding-left: 30px;
-    background: lightpink;
+    padding-left: 20px;
+    background: rgb(228, 221, 222);
     border-radius: 8px;
 
 }
 
+.movie-history > h1 {
+    padding-left: 10px;
+}
 
 /* ----- FILMS & Pay Pr View ----- */
 
@@ -191,17 +212,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-/*
-.search-filter-tags {
-      
-  }
-/*
-.film-search-container {
-    display: flex;
-    flex-direction: column;
-    background: darkgray;
-}
-*/
+
 .filmview-card {
     display: flex;
     flex-direction: column;
@@ -230,7 +241,7 @@ footer {
    }
    
 /* ------ MEDIA Q's ------*/
-@media only screen and (min-width:320px) {
+@media only screen and (min-width:360px) {
    header {
        min-height: 65px;
    }
@@ -284,9 +295,11 @@ footer {
     }
 
     .account-profile-bio {
+        text-align:start;
         flex: 2;
     }
     .profile_img_bio {
+        margin-top: 10px;
         padding: 30px;
     }
 
