@@ -380,7 +380,9 @@ footer {
      }
      /* --- Navigation --- */
      nav a:hover {
-         color: #04BF68;
+         background-color: #fff;
+         color: #000;
+         padding: 5px;
          text-decoration: underline;
      }
  
