@@ -59,9 +59,18 @@ main {
 }
 
 footer {
-    display: none;
+    display: flex;
     flex-direction: column;
 }
+
+.affiliates-container {
+    display: none;
+}
+
+.legal-container {
+    display: none;
+}
+
 /* ----- BUTTONS ----- */
 
 .cta-review_btn, 
@@ -121,12 +130,7 @@ footer {
     border-radius: 4px;
 }
 
-.cta-watch-btn {
-    background: #04BF68;
-    padding: 10px;
-    color: #FFF;
-    border-radius: 4px;
-}
+
 /* ---- Imges -----*/
 .image-movie-cover_small {
     padding-right: 10px;
@@ -286,9 +290,11 @@ footer {
 
 
 
-
-
-
+@media only screen and (min-width: 410px) {
+    header {
+      min-height: 65px;
+    }
+}
 
    @media only screen and (min-width:600px) {
     /* -- Globals ---*/
@@ -332,11 +338,6 @@ footer {
         justify-items: center;
      }
      
-     /*
-     .profile_img_bio {
-         width: 45%;
-     }
-     */
      .account-profile-header {
          flex: 2;
          padding: 20px;
@@ -350,9 +351,9 @@ footer {
      }
 
      .account-profile_img {
-         width: 50%;
+         width: 300px;
          padding-top: 50px;
-         padding-left: 100px;
+         padding-left: 10px;
      }
 
      .profile_img_bio {
@@ -361,9 +362,10 @@ footer {
          padding: 30px;
      }
  
-    .recently-viewed-card {
-        flex-direction: row;
-    }
+     .recently-viewed-wrapper {
+        display: grid;
+        grid-template-columns: repeat (3,1fr);
+      }
     /*--- Account Page ---*/
 }  
 
@@ -379,6 +381,10 @@ footer {
     }
    
     /* --- Account Page --- */
+    .movie-history > h1 {
+        text-align: left;
+        padding-left: 40px;
+    }
    .account-profile-card {
        display: flex;
        gap: 0;
@@ -386,14 +392,36 @@ footer {
    }
 
 
-
+    .recently-viewed-card {
+        width: 320px;
+    }
 
 
    .recently-viewed-wrapper {
-      flex-direction: column;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
       
    }
 
+   /* --- Films & PPW ----*/
+
+   .films-card {
+       width: 300px;
+   }
+
+   .filmview-card {
+       padding-left: 45px;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: start;
+       gap: 40px;
+   }
+
+   .film-search-container > h1 {
+       text-align: center;
+   }
 }
 
 
@@ -403,13 +431,12 @@ footer {
 
     .recently-viewed-wrapper {
         margin: 0 auto;
+        padding-right: 15px
         max-width: 1100px;
-        height: 100vh;
+        height: auto;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
-
-
     }
     
     .recently-viewed-card {
@@ -419,11 +446,27 @@ footer {
     .movie-history > h1 {
         text-align: center;
     }
+
+    /* ---- Films & PPW --- */
+    .film-search-container {
+        margin: 0 auto;
+    }
+
+    .filmview-card {
+        margin: 0 auto;
+        max-width: 1100px;
+    }
 }
+
+
+
+
+
+/*
 
 @media only screen and (min-width:1100px) {
     body {
-        background: crimson;
+
     }
 
 
