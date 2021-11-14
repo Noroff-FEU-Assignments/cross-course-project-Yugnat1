@@ -8,10 +8,7 @@ Green:  #04BF68
 Orange: #E55800
 ---------------------*/
 /* ----- IMPORTS ----*/
-/*@import "imports/layout.css"; */
 @import "imports/typography.css";
-/* ---- FONT FACE ---*/
-
 
 /* ---- GLOBALS -----*/
 html, body {
@@ -234,7 +231,35 @@ footer {
     font-weight: bold;
 }
 /* ----- Signup Page -----*/
+.signup-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /*
+    background-image: url("/images/camera-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: bottom;
+    background-position-y: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    */
+}
+.signup-box1 {
+    padding-left: 5px;
+}
+.signup-box2{
+    padding-left: 5px;
+}
+.signup-box3 {
+    padding-left: 35px;
+}
 
+.signup-box4 {
+    text-align: center;
+    margin-top: 30px;
+}
 /* ---- Accounts page ----*/
 .main-content-wrapper {
     height: 100vh;
@@ -286,6 +311,13 @@ footer {
     padding-left: 10px;
 }
 
+.main-account-wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 /* ----- FILMS & Pay Pr View ----- */
 
 .film-header {
@@ -311,9 +343,8 @@ footer {
     align-content: stretch;
 }
 
-.film-page-header > #film-search {
-    height: 2em;
-}
+
+
 .search-container {
     width: 100px;
     display:flex;
@@ -342,6 +373,8 @@ footer {
     border-radius: 4px;
     background: rgb(233, 231, 224);
 }
+
+/* --- Contact Page ---*/
 
 /* ---- Footer ----*/
 footer {
@@ -417,13 +450,13 @@ footer {
         background-size: cover;
         max-height: fit-content;
      }
-
+  
      /* ---- Account Page ----*/
      .account-profile-card {
         flex-direction: row;
         justify-items: center;
      }
-     
+
      .account-profile-header {
          flex: 2;
          padding: 20px;
@@ -525,7 +558,7 @@ footer {
     }
     
     .recently-viewed-card {
-        max-height: 470px;
+        max-height: 500px;
     }
 
     .movie-history > h1 {
