@@ -73,7 +73,6 @@ nav {
 .header-wrapper {
     display: flex;
     justify-content: space-between;
-    justify-items: center;
 }
 
 .icon-box {
@@ -255,11 +254,12 @@ footer {
 /* ----- FILMS & Pay Pr View ----- */
 
 .film-header {
-    background-image: url("/images/mobile/lightbulb-5352822.png");
+    background-image: url("/images/camera-header.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: center;
-    height: 200px;
+    background-position-x: bottom;
+    background-position-y: right;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -362,6 +362,7 @@ footer {
          display: none;
      }
      
+
      .header-main-containter {
         display: flex;
         flex-direction: row;
@@ -485,7 +486,6 @@ footer {
         margin: 0 auto;
         padding-right: 15px
         max-width: 1100px;
-        height: auto;
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -535,14 +535,4 @@ footer {
 
 
 
-
-/*
-
-@media only screen and (min-width:1100px) {
-    body {
-
-    }
-
-
-}
 
