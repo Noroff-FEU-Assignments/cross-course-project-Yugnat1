@@ -18,3 +18,17 @@ nav li {
     color: #FFF;
     text-align: center;
 }
+
+.welcome-hero > h1 {
+    font-size: 2rem;
+    color: #FFF;
+    text-align: center;
+}
+
+.welcome-hero, .signup-hero-container, .readmore-box > p {
+    padding-top: 20px;
+    font-size: 1.4rem;
+    color: #FFF;
+    text-align: center;
+}
+
